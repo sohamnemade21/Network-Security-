@@ -1,9 +1,7 @@
 python-dotenv
 pandas
-matplotlib 
-numpy 
+matplotlib
+numpy
 seaborn
 pymongo
 certifi
-
--e .
