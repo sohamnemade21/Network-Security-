@@ -1,0 +1,2 @@
+2026-04-03 11:30:05,504] 32 root - INFO - Enter the try block
+2026-04-03 11:30:05,504] 37 root - ERROR - Error occurred in script [E:\Krish Naik Data science course\Project 2\Network Security\NetworkSecurity\exception\exception.py] at line number [33] error message [division by zero]

@@ -1,0 +1,2 @@
+2026-04-03 11:00:42,599] 33 root - INFO - NetworkSecurityException module imported successfully
+2026-04-03 11:00:42,599] 43 root - ERROR - Error occurred in script [E:\Krish Naik Data science course\Project 2\Network Security\NetworkSecurity\exception\exception.py] at line number [39] error message [division by zero]
