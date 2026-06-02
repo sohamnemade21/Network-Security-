@@ -1,0 +1,4 @@
+2026-06-02 20:12:41,271] 41 root - INFO - Exported collection nemadesoham21_db.phisingData as dataframe
+2026-06-02 20:12:41,772] 52 root - INFO - Saved feature store file at artifact\06-02-2026-20-12-39\data_ingestion\feature_store\phishingData.csv
+2026-06-02 20:12:42,250] 76 root - INFO - Saved train file at artifact\06-02-2026-20-12-39\data_ingestion\ingested\train.csv and test file at artifact\06-02-2026-20-12-39\data_ingestion\ingested\test.csv
+2026-06-02 20:12:42,250] 18 root - INFO - Data ingestion artifact: DataIngestionArtifact(train_file_path='artifact\\06-02-2026-20-12-39\\data_ingestion\\ingested\\train.csv', test_file_path='artifact\\06-02-2026-20-12-39\\data_ingestion\\ingested\\test.csv')
