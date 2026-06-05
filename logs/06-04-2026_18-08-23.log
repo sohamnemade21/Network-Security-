@@ -1,0 +1,23 @@
+2026-06-04 18:08:27,226] 41 root - INFO - Exported collection nemadesoham21_db.phisingData as dataframe
+2026-06-04 18:08:31,321] 52 root - INFO - Saved feature store file at artifact\06-04-2026-18-08-23\data_ingestion\feature_store\phishingData.csv
+2026-06-04 18:08:37,059] 76 root - INFO - Saved train file at artifact\06-04-2026-18-08-23\data_ingestion\ingested\train.csv and test file at artifact\06-04-2026-18-08-23\data_ingestion\ingested\test.csv
+2026-06-04 18:08:37,059] 19 root - INFO - Data ingestion artifact: DataIngestionArtifact(train_file_path='artifact\\06-04-2026-18-08-23\\data_ingestion\\ingested\\train.csv', test_file_path='artifact\\06-04-2026-18-08-23\\data_ingestion\\ingested\\test.csv')
+2026-06-04 18:08:37,059] 20 root - INFO - Data Initiation completed successfully.
+2026-06-04 18:08:37,063] 24 root - INFO - Starting data validation.
+2026-06-04 18:08:37,090] 41 root - INFO - Required number of columns: 31
+2026-06-04 18:08:37,090] 42 root - INFO - Dataframe has columns: 31
+2026-06-04 18:08:37,090] 41 root - INFO - Required number of columns: 31
+2026-06-04 18:08:37,090] 42 root - INFO - Dataframe has columns: 31
+2026-06-04 18:08:37,837] 26 root - INFO - Data validation artifact: DataValidationArtifact(validation_status=True, valid_train_file_path='artifact\\06-04-2026-18-08-23\\data_validation\\validated\\train.csv', valid_test_file_path='artifact\\06-04-2026-18-08-23\\data_validation\\validated\\test.csv', invalid_train_file_path='artifact\\06-04-2026-18-08-23\\data_validation\\invalid\\train.csv', invalid_test_file_path='artifact\\06-04-2026-18-08-23\\data_validation\\invalid\\test.csv', drift_report_file_path='artifact\\06-04-2026-18-08-23\\data_validation\\drift_report\\report.yaml')
+2026-06-04 18:08:37,839] 31 root - INFO - Starting data transformation.
+2026-06-04 18:08:37,839] 56 root - INFO - Entered the initiate_data_transformation method of DataTransformation class
+2026-06-04 18:08:37,839] 58 root - INFO - Starting data transformation
+2026-06-04 18:08:37,877] 41 root - INFO - Entered the get_data_transformer_object method of DataTransformation class
+2026-06-04 18:08:37,877] 44 root - INFO - Data transformer object: {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+2026-06-04 18:08:39,234] 47 root - INFO - Object saved successfully at artifact\06-04-2026-18-08-23\data_transformation\preprocessor\preprocessor.pkl
+2026-06-04 18:08:39,252] 37 root - INFO - Model training started.
+2026-06-04 18:08:50,480] 88 root - INFO - Best model: Random Forest (f1=0.9776)
+2026-06-04 18:08:50,540] 58 root - INFO - Object loaded successfully from artifact\06-04-2026-18-08-23\data_transformation\preprocessor\preprocessor.pkl
+2026-06-04 18:08:51,980] 47 root - INFO - Object saved successfully at artifact\06-04-2026-18-08-23\model_trainer\trained_model\model.pkl
+2026-06-04 18:08:51,980] 125 root - INFO - Model Trainer Artifact: ModelTrainerArtifact(trained_model_file_path='artifact\\06-04-2026-18-08-23\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationArtifact(f1_train_score=0.9909745461920698, precision_train_score=0.9884685413716366, recall_train_score=0.9934932899552664), test_metric_artifact=ClassificationArtifact(f1_train_score=0.977582065652522, precision_train_score=0.9698173153296267, recall_train_score=0.9854721549636803))
+2026-06-04 18:08:51,983] 42 root - INFO - Model Training Artifact created
