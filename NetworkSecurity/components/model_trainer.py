@@ -1,4 +1,5 @@
 import os
+import re
 import sys
 import tempfile
 
@@ -31,6 +32,12 @@ from NetworkSecurity.utils.ml_utils.metric.classification_metric import (
     get_classification_score,
 )
 from NetworkSecurity.utils.ml_utils.model.estimator import NetworkModel
+
+import mlflow
+import dagshub
+import dagshub
+dagshub.init(repo_owner='sohamnemade21', repo_name='Network-Security-', mlflow=True)
+
 
 
 class ModelTrainer:
@@ -150,6 +157,11 @@ class ModelTrainer:
                 file_path=self.model_trainer_config.trained_model_file_path,
                 obj=network_model,
             )
+            save_object("Final_model/model.pkl", best_model)
+
+
+
+
 
             model_trainer_artifact = ModelTrainerArtifact(
                 trained_model_file_path=self.model_trainer_config.trained_model_file_path,
@@ -174,5 +186,9 @@ class ModelTrainer:
             x_test, y_test = test_arr[:, :-1], test_arr[:, -1]
 
             return self.train_model(x_train, y_train, x_test, y_test)
+        
+            model_trainer_artifact = self.train_model(x_train, y_train, x_test, y_test)
+            return model_trainer_artifact
+        
         except Exception as e:
             raise NetworkSecurityException(e, sys) from e

@@ -1,0 +1,6 @@
+2026-06-05 13:34:47,139] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2026-06-05 13:34:47,214] 107 dagshub - INFO - Accessing as sohamnemade21
+2026-06-05 13:34:48,196] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/sohamnemade21/Network-Security- "HTTP/1.1 200 OK"
+2026-06-05 13:34:48,741] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2026-06-05 13:34:48,743] 107 dagshub - INFO - Initialized MLflow to track repo "sohamnemade21/Network-Security-"
+2026-06-05 13:34:48,743] 107 dagshub - INFO - Repository sohamnemade21/Network-Security- initialized!

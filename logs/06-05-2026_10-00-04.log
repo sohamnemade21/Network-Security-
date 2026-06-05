@@ -1,0 +1,31 @@
+2026-06-05 10:00:31,811] 1025 httpx - INFO - HTTP Request: POST https://dagshub.com/login/oauth/middleman "HTTP/1.1 200 OK"
+2026-06-05 10:00:33,224] 1025 httpx - INFO - HTTP Request: POST https://dagshub.com/login/oauth/access_token "HTTP/1.1 200 OK"
+2026-06-05 10:00:34,178] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2026-06-05 10:00:34,184] 107 dagshub - INFO - Accessing as sohamnemade21
+2026-06-05 10:00:35,158] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/sohamnemade21/Network-Security- "HTTP/1.1 200 OK"
+2026-06-05 10:00:36,017] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2026-06-05 10:00:36,020] 107 dagshub - INFO - Initialized MLflow to track repo "sohamnemade21/Network-Security-"
+2026-06-05 10:00:36,021] 107 dagshub - INFO - Repository sohamnemade21/Network-Security- initialized!
+2026-06-05 10:00:38,007] 41 root - INFO - Exported collection nemadesoham21_db.phisingData as dataframe
+2026-06-05 10:00:38,517] 52 root - INFO - Saved feature store file at artifact\06-05-2026-10-00-04\data_ingestion\feature_store\phishingData.csv
+2026-06-05 10:00:41,991] 76 root - INFO - Saved train file at artifact\06-05-2026-10-00-04\data_ingestion\ingested\train.csv and test file at artifact\06-05-2026-10-00-04\data_ingestion\ingested\test.csv
+2026-06-05 10:00:41,991] 25 root - INFO - Data ingestion artifact: DataIngestionArtifact(train_file_path='artifact\\06-05-2026-10-00-04\\data_ingestion\\ingested\\train.csv', test_file_path='artifact\\06-05-2026-10-00-04\\data_ingestion\\ingested\\test.csv')
+2026-06-05 10:00:41,991] 26 root - INFO - Data Initiation completed successfully.
+2026-06-05 10:00:42,000] 31 root - INFO - Starting data validation.
+2026-06-05 10:00:42,036] 41 root - INFO - Required number of columns: 31
+2026-06-05 10:00:42,036] 42 root - INFO - Dataframe has columns: 31
+2026-06-05 10:00:42,036] 41 root - INFO - Required number of columns: 31
+2026-06-05 10:00:42,036] 42 root - INFO - Dataframe has columns: 31
+2026-06-05 10:00:53,101] 33 root - INFO - Data validation artifact: DataValidationArtifact(validation_status=True, valid_train_file_path='artifact\\06-05-2026-10-00-04\\data_validation\\validated\\train.csv', valid_test_file_path='artifact\\06-05-2026-10-00-04\\data_validation\\validated\\test.csv', invalid_train_file_path='artifact\\06-05-2026-10-00-04\\data_validation\\invalid\\train.csv', invalid_test_file_path='artifact\\06-05-2026-10-00-04\\data_validation\\invalid\\test.csv', drift_report_file_path='artifact\\06-05-2026-10-00-04\\data_validation\\drift_report\\report.yaml')
+2026-06-05 10:00:53,101] 37 root - INFO - Starting data transformation.
+2026-06-05 10:00:53,102] 56 root - INFO - Entered the initiate_data_transformation method of DataTransformation class
+2026-06-05 10:00:53,102] 58 root - INFO - Starting data transformation
+2026-06-05 10:00:53,130] 41 root - INFO - Entered the get_data_transformer_object method of DataTransformation class
+2026-06-05 10:00:53,130] 44 root - INFO - Data transformer object: {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+2026-06-05 10:00:56,632] 47 root - INFO - Object saved successfully at artifact\06-05-2026-10-00-04\data_transformation\preprocessor\preprocessor.pkl
+2026-06-05 10:00:56,633] 43 root - INFO - Model training started.
+2026-06-05 10:01:08,571] 123 root - INFO - Best model: Random Forest (f1=0.9662)
+2026-06-05 10:01:37,240] 58 root - INFO - Object loaded successfully from artifact\06-05-2026-10-00-04\data_transformation\preprocessor\preprocessor.pkl
+2026-06-05 10:01:41,012] 47 root - INFO - Object saved successfully at artifact\06-05-2026-10-00-04\model_trainer\trained_model\model.pkl
+2026-06-05 10:01:41,012] 165 root - INFO - Model Trainer Artifact: ModelTrainerArtifact(trained_model_file_path='artifact\\06-05-2026-10-00-04\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationArtifact(f1_score=0.9916187014036151, precision_score=0.9903186768858411, recall_score=0.9929221435793731), test_metric_artifact=ClassificationArtifact(f1_score=0.9662273476112027, precision_score=0.9646381578947368, recall_score=0.9678217821782178))
+2026-06-05 10:01:41,015] 49 root - INFO - Model Training Artifact created

@@ -1,0 +1,32 @@
+2026-06-05 11:22:30,137] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2026-06-05 11:22:30,210] 107 dagshub - INFO - Accessing as sohamnemade21
+2026-06-05 11:22:31,352] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/sohamnemade21/Network-Security- "HTTP/1.1 200 OK"
+2026-06-05 11:22:32,354] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2026-06-05 11:22:32,355] 107 dagshub - INFO - Initialized MLflow to track repo "sohamnemade21/Network-Security-"
+2026-06-05 11:22:32,356] 107 dagshub - INFO - Repository sohamnemade21/Network-Security- initialized!
+2026-06-05 11:24:03,872] 33 root - INFO - Data Ingestion config: <NetworkSecurity.entity.config_entity.DataIngestionConfig object at 0x0000025C07489FD0>
+2026-06-05 11:24:08,630] 41 root - INFO - Exported collection nemadesoham21_db.phisingData as dataframe
+2026-06-05 11:24:09,083] 52 root - INFO - Saved feature store file at artifact\06-05-2026-11-22-27\data_ingestion\feature_store\phishingData.csv
+2026-06-05 11:24:09,631] 76 root - INFO - Saved train file at artifact\06-05-2026-11-22-27\data_ingestion\ingested\train.csv and test file at artifact\06-05-2026-11-22-27\data_ingestion\ingested\test.csv
+2026-06-05 11:24:09,631] 36 root - INFO - Data Ingestion artifact: DataIngestionArtifact(train_file_path='artifact\\06-05-2026-11-22-27\\data_ingestion\\ingested\\train.csv', test_file_path='artifact\\06-05-2026-11-22-27\\data_ingestion\\ingested\\test.csv')
+2026-06-05 11:24:09,632] 44 root - INFO - Data Validation config: <NetworkSecurity.entity.config_entity.DataValidationConfig object at 0x0000025C0748A660>
+2026-06-05 11:24:09,684] 41 root - INFO - Required number of columns: 31
+2026-06-05 11:24:09,684] 42 root - INFO - Dataframe has columns: 31
+2026-06-05 11:24:09,685] 41 root - INFO - Required number of columns: 31
+2026-06-05 11:24:09,685] 42 root - INFO - Dataframe has columns: 31
+2026-06-05 11:24:10,457] 47 root - INFO - Data Validation artifact: DataValidationArtifact(validation_status=True, valid_train_file_path='artifact\\06-05-2026-11-22-27\\data_validation\\validated\\train.csv', valid_test_file_path='artifact\\06-05-2026-11-22-27\\data_validation\\validated\\test.csv', invalid_train_file_path='artifact\\06-05-2026-11-22-27\\data_validation\\invalid\\train.csv', invalid_test_file_path='artifact\\06-05-2026-11-22-27\\data_validation\\invalid\\test.csv', drift_report_file_path='artifact\\06-05-2026-11-22-27\\data_validation\\drift_report\\report.yaml')
+2026-06-05 11:24:10,457] 56 root - INFO - Data Transformation config: <NetworkSecurity.entity.config_entity.DataTransformationConfig object at 0x0000025C0748AE40>
+2026-06-05 11:24:10,457] 56 root - INFO - Entered the initiate_data_transformation method of DataTransformation class
+2026-06-05 11:24:10,458] 58 root - INFO - Starting data transformation
+2026-06-05 11:24:10,487] 41 root - INFO - Entered the get_data_transformer_object method of DataTransformation class
+2026-06-05 11:24:10,487] 44 root - INFO - Data transformer object: {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+2026-06-05 11:24:12,270] 47 root - INFO - Object saved successfully at artifact\06-05-2026-11-22-27\data_transformation\preprocessor\preprocessor.pkl
+2026-06-05 11:24:12,521] 47 root - INFO - Object saved successfully at final_model/preprocessor.pkl
+2026-06-05 11:24:12,523] 62 root - INFO - Data TransformationArtifact: DataTransformationArtifact(transformed_train_file_path='artifact\\06-05-2026-11-22-27\\data_transformation\\transformed\\train.npy', transformed_test_file_path='artifact\\06-05-2026-11-22-27\\data_transformation\\transformed\\test.npy', preprocessor_object_file_path='artifact\\06-05-2026-11-22-27\\data_transformation\\preprocessor\\preprocessor.pkl')
+2026-06-05 11:24:12,523] 70 root - INFO - Model Trainer config: <NetworkSecurity.entity.config_entity.ModelTrainerConfig object at 0x0000025C0748BA10>
+2026-06-05 11:24:28,158] 124 root - INFO - Best model: Random Forest (f1=0.9682)
+2026-06-05 11:25:26,971] 58 root - INFO - Object loaded successfully from artifact\06-05-2026-11-22-27\data_transformation\preprocessor\preprocessor.pkl
+2026-06-05 11:25:35,927] 47 root - INFO - Object saved successfully at artifact\06-05-2026-11-22-27\model_trainer\trained_model\model.pkl
+2026-06-05 11:25:50,214] 47 root - INFO - Object saved successfully at Final_model/model.pkl
+2026-06-05 11:25:50,215] 171 root - INFO - Model Trainer Artifact: ModelTrainerArtifact(trained_model_file_path='artifact\\06-05-2026-11-22-27\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationArtifact(f1_score=0.9916305334274478, precision_score=0.9889380530973452, recall_score=0.9943377148634985), test_metric_artifact=ClassificationArtifact(f1_score=0.9682474226804124, precision_score=0.9678483099752679, recall_score=0.9686468646864687))
+2026-06-05 11:25:50,219] 73 root - INFO - Model Trainer artifact: ModelTrainerArtifact(trained_model_file_path='artifact\\06-05-2026-11-22-27\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationArtifact(f1_score=0.9916305334274478, precision_score=0.9889380530973452, recall_score=0.9943377148634985), test_metric_artifact=ClassificationArtifact(f1_score=0.9682474226804124, precision_score=0.9678483099752679, recall_score=0.9686468646864687))

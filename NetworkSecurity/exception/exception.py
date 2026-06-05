@@ -1,5 +1,6 @@
 from pathlib import Path
 import sys
+from typing import Any
 
 if __package__ is None or __package__ == "":
     project_root = Path(__file__).resolve().parents[2]
@@ -10,7 +11,7 @@ from NetworkSecurity.logging.logger import logging as logger
 
 
 class NetworkSecurityException(Exception):
-    def __init__(self, error_message, error_details: sys):
+    def __init__(self, error_message, error_details: Any):
         super().__init__(error_message)  # good practice
 
         self.error_message = error_message

@@ -1,0 +1,8 @@
+2026-06-05 13:56:12,878] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2026-06-05 13:56:12,967] 107 dagshub - INFO - Accessing as sohamnemade21
+2026-06-05 13:56:14,043] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/sohamnemade21/Network-Security- "HTTP/1.1 200 OK"
+2026-06-05 13:56:14,968] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2026-06-05 13:56:14,969] 107 dagshub - INFO - Initialized MLflow to track repo "sohamnemade21/Network-Security-"
+2026-06-05 13:56:14,969] 107 dagshub - INFO - Repository sohamnemade21/Network-Security- initialized!
+2026-06-05 13:56:32,185] 58 root - INFO - Object loaded successfully from final_model/preprocessor.pkl
+2026-06-05 13:56:32,196] 58 root - INFO - Object loaded successfully from Final_model/model.pkl
